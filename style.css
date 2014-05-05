@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(font.woff) format('woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Monospace;
+	background-color: #222222;
+}
+
+.title {
+	margin-top: 100px;
+	color: #ffffff;
+	font-size: 72px;
+	font-family: 'Lobster', serif;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.content {
+	width: 600px;
+	margin: 50px auto;
+
+	color: #eeeeee;
+}
