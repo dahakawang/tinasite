@@ -5,6 +5,13 @@
   src: local('Lobster'), url(font.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(font2.woff) format('woff');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -23,6 +30,7 @@ body {
 }
 
 .overlay {
+	z-index: 200;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -31,6 +39,14 @@ body {
 .content {
 	width: 600px;
 	margin: 50px auto;
-
+	font-family: 'Open Sans Condensed', arial, sans-serif;
 	color: #eeeeee;
+}
+
+.mystery-clock {
+	margin: 150px auto;
+	width: 700px;
+}
+p {
+	margin: 25px;
 }
