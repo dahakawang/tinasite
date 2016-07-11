@@ -27,7 +27,12 @@ function init(){
     document.addEventListener('mousemove', onDocumentMouseMove, false);								
     document.addEventListener('mousedown', onDocumentMouseDown, false);
     document.addEventListener('mouseup', onDocumentMouseUp, false);			    
-   	document.addEventListener('keydown', onDocumentKeyDown, false);			    
+   	document.addEventListener('keydown', onDocumentKeyDown, false);		
+
+   	document.addEventListener('touchmove', onDocumentMouseDown, false);
+   	document.addEventListener('touchstart', onDocumentMouseDown, false);
+	document.addEventListener('touchend', onDocumentMouseDown, false);
+
     setup();
 		drawInternal();			
 }
